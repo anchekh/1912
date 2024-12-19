@@ -1,0 +1,393 @@
+.Header
+{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid rgba(84, 84, 84, .48);
+    padding: 0 12px 0 24px;
+    height: 55px;
+    background-color: #1a1a1a;
+    white-space: nowrap;
+    width: auto;
+}
+.Header__container
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1376px;
+    color: rgba(255, 255, 255, .87);
+    height: 55px;
+}
+.Logo__container
+{
+    display: flex;
+    align-items: center;
+    padding-top: 1px;
+    height: 55px;
+    cursor: pointer;
+}
+.Logo__container:hover
+{
+    opacity: .6;
+    transition: opacity .25s;
+}
+.Logo-text
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .87);
+}
+.Logo-icon + .Logo-text
+{
+    padding-left: 8px;
+}
+.Content__container
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    height: 55px;
+}
+.Search__container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    margin: 0;
+    height: 55px;
+    cursor: pointer;
+}
+.Search__container:hover .Search-icon
+{
+    color: rgba(255, 255, 255, .87);
+}
+.Search__container:hover .Search-text
+{
+    color: rgba(255, 255, 255, .87);
+}
+.Search__container:hover .Search-button
+{
+    border-color: #42d392;
+}
+.Search__container:hover .Search-button-keys
+{
+    color: #42d392;
+}
+.Search-engine
+{
+    align-items: center;
+    display: flex;
+    color: rgba(235, 235, 235, .6);
+}
+.Search-icon
+{
+    position: relative;
+    height: 18px;
+    width: 18px;
+    stroke-width: 1.6;
+    margin-right: 10px;
+}
+.Search-text
+{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 10px 0 0;
+}
+.Search-button
+{
+    gap: 2px;
+    min-width: auto;
+    border: 1px solid rgba(235, 235, 235, .38);
+    border-radius: 4px;
+    padding: 0 6px;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.Search-button-keys
+{
+    width: auto;
+    min-width: auto;
+    font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    color: rgba(235, 235, 235, .38);
+}
+
+/* skip */
+.Menu__container
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-left: 8px;
+    /* margin-right: 10px; */
+}
+
+.Menu__container-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    height: 55px;
+    color: rgba(255, 255, 255, .87);
+    cursor: pointer;
+}
+.item-text
+{
+    display: flex;
+    align-items: center;
+    line-height: 55px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .87);
+    white-space: nowrap;
+}
+.item-icon
+{
+    margin-left: 4px;
+    /* width: 14px;
+    height: 14px; */
+    /* fill: rgba(255, 255, 255, .87); */
+}
+.media
+{
+    /* height: 36px; */
+    width: 36px;
+    margin-top: 2px;
+}
+.menu
+{
+    width: 14px;
+    /* height: 14px; */
+    fill: rgba(255, 255, 255, .87);
+    margin-top: 3px;
+}
+/* .arrow
+{
+    justify-content: center;
+    align-items: center;
+} */
+.moon
+{
+    position: relative;
+    transform: translate(16px);
+    background-color: #1a1a1a;
+    fill: rgba(255, 255, 255, .87);
+    height: 18px;
+    width: 18px;
+    top: 1px;
+    border-radius: 50%;
+}
+.Theme__container:hover
+{
+    border-color: #8e8e8e;
+}
+.moon > svg
+{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    fill: #ffffff;
+}
+.lg > svg
+{
+    height: 16px;
+    width: 16px;
+    fill: rgba(255, 255, 255, .87);
+    margin-top: 4px;
+    margin-left: -3px;
+}
+.frame_1
+{
+    margin-right: 9px;
+    height: 20px;
+    width: 1px;
+    background-color: rgba(84, 84, 84, .65);
+}
+.frame_2
+{
+    margin-left: 9px;
+    height: 20px;
+    width: 1px;
+    background-color: rgba(84, 84, 84, .65);
+}
+.item-flag
+{
+    display: inline-block;
+    padding: 3.5px 4px;
+    margin-left: 6px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .2px;
+    border-radius: 6px;
+    background-color: #3b8eed;
+    color: #f9f9f9;
+}
+.Theme__container
+{
+    margin-left: 16px;
+    position: relative;
+    border-radius: 11px;
+    display: block;
+    width: 40px;
+    height: 22px;
+    border: 1px solid rgba(84, 84, 84, .65);
+    background-color: #2f2f2f;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.Theme-icon
+{
+    top: 2px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    fill: rgba(235, 235, 235, .6);
+    border-radius: 50%;
+    overflow: hidden;
+}
+@media (min-width: 1280px)
+{
+    .Media__container
+    {
+        display: flex;
+    }
+}
+.Media__container
+{
+    display: flex;
+    margin-left: 12px;
+    /* margin-right: -10px; */
+    justify-content: center;
+    align-items: center;
+}
+.Media__container-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: rgba(235, 235, 235, .6);
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+}
+.Media__container-item:hover
+{
+    fill: rgba(255, 255, 255, .87);
+}
+.Extra__container
+{
+    display: none;
+}
+.Extra__container-item
+{
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    /* width: 44px; */
+    height: 55px;
+    color: rgba(255, 255, 255, .87);
+    cursor: pointer;
+}
+.extra > svg
+{
+    height: 20px;
+    width: 20px;
+    fill: rgba(255, 255, 255, .87);
+}
+.Burger__container
+{
+    display: none;
+}
+.Burger__container-item
+{
+    left: 10px;
+    position: relative;
+    width: 40px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.burger-top
+{
+    position: absolute;
+    top: 20.5px;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .87);
+}
+.burger-middle
+{
+    position: absolute;
+    top: 26.5px;
+    left: 8px;
+    width: 8px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .87);
+}
+.burger-bottom
+{
+    position: absolute;
+    top: 32.5px;
+    left: 4px;
+    width: 12px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .87);
+}
+@media screen and (max-width: 1280px) 
+{
+    .Extra__container
+    {
+        display: block;
+    }
+    .Theme__container
+    {
+        display: none;
+    }
+    .Media__container
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 960px)
+{
+    .Search-text
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .Menu__container
+    {
+        display: none;
+    }
+    .Search-button
+    {
+        display: none;
+    }
+    .Extra__container
+    {
+        display: none;
+    }
+    .Burger__container
+    {
+        display: block;
+    }
+}

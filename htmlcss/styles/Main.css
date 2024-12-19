@@ -1,0 +1,445 @@
+*, :before, :after 
+{
+    box-sizing: border-box;
+}
+.Section
+{
+    padding: 96px 32px;
+    text-align: center;
+}
+.Heading
+{
+	color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    font-size: 76px;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.Description
+{
+    max-width: 960px;
+    line-height: 1.5;
+    color: rgba(235, 235, 235, .6);
+    font-size: 22px;
+    margin: 24px auto 40px;
+}
+.Actions
+{
+    /* height: 44px; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.Actions__container
+{
+    align-items: center;
+    justify-content: center;
+}
+.WhyVue
+{
+    color: #213547;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 8px;
+    position: relative;
+    font-weight: 600;
+    background-color: #42b883;
+    margin-right: 18px;
+    padding: 8px 1em 8px 3em;
+    cursor: pointer;
+    max-height: 40px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.play
+{
+    display: inline;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    margin-left: 2px;
+    fill: rgba(33, 53, 71, 1);
+    width: 1.5em;
+}
+.play > svg
+{
+    fill: rgba(33, 53, 71, 1);
+}
+.GetStarted
+{
+    color: #aac8e4;
+    margin-right: 18px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: #2f2f2f;
+    padding: 8px 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    max-height: 40px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.start
+{
+    position: relative;
+    display: inline;
+    margin-left: 4px;
+    fill: rgba(170, 200, 228, 1);
+}
+.start > svg
+{
+    height: 10px;
+    width: 10px;
+}
+.Install
+{
+    color: #aac8e4;
+    margin-right: 18px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: #2f2f2f;
+    padding: 8px 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    max-height: 40px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.Security
+{
+    color: #aac8e4;
+    font-size: 16px;
+    display: inline-block;
+    background-color: #2f2f2f;
+    padding: 8px 18px;
+    font-weight: 500; 
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:linear-gradient(#2f2f2f, #2f2f2f) padding-box, linear-gradient(45deg, #42d392, #647eff) border-box;
+    vertical-align: middle;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.go > svg
+{
+    width: 12px;
+    height: 12px;
+}
+.go
+{
+    position: relative;
+    display: inline;
+    margin-left: 4px;
+    fill: #aac8e4;
+}
+
+.Specials
+{
+    border-top: 1px solid rgba(84, 84, 84, .48);
+    border-bottom: 1px solid rgba(84, 84, 84, .48);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+}
+.Special-sponsor
+{
+    text-align: center;
+    color: rgba(235, 235, 235, .6);
+    font-weight: 500;
+    font-size: 13px;
+    vertical-align: middle;
+    flex: 1;
+}
+.Highlights
+{
+    max-width: 960px;
+    margin: 0 auto;
+    color: rgba(235, 235, 235, .6);
+    padding: 42px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.Highlight 
+{
+    background-color: transparent;
+    padding: 28px 36px;
+    border-radius: 8px;
+    flex: 0 32%;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Highlight > h2
+{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -.4px;
+    color: rgba(255, 255, 255, .87);
+    transition: color .5s;
+    margin-bottom: .75em;
+    margin: 0;
+}
+.Highlight > p
+{
+    font-weight: 400;
+    font-size: 15px;
+}
+.Sponsors
+{
+    max-width: 836px;
+    margin: 0 auto;
+    padding: 42px 32px;
+}
+.Sponsors > h2
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.Sponsor__container
+{
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    column-gap: 4px;
+}
+.Sponsor-item
+{
+    background-color: #242424;
+    margin: 2px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    height: calc(240px / 2 - 6px);
+    color: rgba(255, 255, 255, .87);
+    cursor: pointer;
+}
+.platinum > .Sponsor-item > img
+{
+    filter: grayscale(1) invert(1);
+    max-width: calc(240px - 30px);
+    max-height: calc(240px / 2 - 20px);
+    display: block;
+    border-style: none;
+}
+.gold > .Sponsor-item > img
+{
+    filter: grayscale(1) invert(1);
+    max-width: calc(180px - 30px);
+    max-height: calc(180px / 2 - 20px);
+    display: block;
+    border-style: none;
+}
+.Sponsor-item:hover img 
+{
+    filter: none;
+    background-color: #f9f9f9;
+}
+.Sponsor-item:hover
+{
+    background-color: #f9f9f9;
+}
+.action
+{
+    font-size: 11px;
+    color: rgba(235, 235, 235, .38);
+    height: auto;
+}
+.Sponsor-item:hover .action
+{
+    background-color: #f9f9f9;
+    color: #213547;
+}
+.gold
+{
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    column-gap: 4px;
+}
+.gold > .Sponsor-item
+{
+    background-color: #242424;
+    margin: 2px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    height: calc(180px / 2 - 6px);
+    color: rgba(255, 255, 255, .87);
+    cursor: pointer;
+}
+.Sponsor-item:hover img 
+{
+    filter: none;
+    background-color: #f9f9f9;
+}
+.Sponsor-item:hover
+{
+    background-color: #f9f9f9;
+}
+.Sitemap
+{
+    background-color: #242424;
+    padding: 42px 32px;
+}
+.Sitemap__container
+{
+    max-width: 900px;
+    margin: 0 auto;
+    columns: 3;
+    padding: 24px 32px;
+}
+.Sitemap-item
+{
+    margin-bottom: 2em;
+    break-inside: avoid;
+}
+.Sitemap > h4
+{
+    font-weight: 500;
+    color: rgba(255, 255, 255, .87);
+    margin-bottom: .25em;
+    font-size: 16px;
+}
+h4
+{
+    margin: 0;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.List-item
+{
+    font-size: .9em;
+    color: rgba(235, 235, 235, .6);
+    cursor: pointer;
+}
+.list-icon
+{
+    display: inline-block;
+    margin-top: -2px;
+    margin-left: 4px;
+    width: 11px;
+    height: 11px;
+    fill: rgba(235, 235, 235, .38);
+    vertical-align: middle;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px)
+{
+    .Sitemap__container
+    {
+        columns: 2;
+    }
+}
+@media screen and (max-width: 960px) 
+{
+    .Heading
+    {
+        font-size: 64px;
+        letter-spacing: -.5px;
+    }
+    .Description
+    {
+        font-size: 18px;
+        margin-bottom: 48px;
+    }
+}
+@media screen and (max-width: 794px)
+{
+    .Heading
+    {
+        font-size: 48px;
+        letter-spacing: -.5px;
+    }
+    .Security
+    {
+        margin-top: 18px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .Highlights
+    {
+        flex: 0 100%;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .Sitemap__container
+    {
+        columns: 1;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    .Section
+    {
+        padding: 56px 32px;
+    }
+    .Description
+    {
+        font-size: 16px;
+        margin: 18px 0 30px;
+    }
+    .WhyVue
+    {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
+    .Install
+    {
+        margin: 18px 0;
+    }
+    .Security
+    {
+        margin-top: 0;
+    }
+    .Specials
+    {
+        flex-direction: column;
+        margin-top: 18px;
+    }
+    .Special-sponsor
+    {
+        text-align: center !important;
+    }
+    .Highlights
+    {
+        padding: 20px 36px;
+    }
+}
+@media screen and (max-width: 370px)
+{
+    .Heading
+    {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 324px)
+{
+    .Install
+    {
+        margin-right: 18px;
+        margin-top: 18px;
+    }
+    .GetStarted
+    {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
